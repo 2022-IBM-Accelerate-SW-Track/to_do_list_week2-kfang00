@@ -20,7 +20,7 @@ class Home extends Component {
     // This solution works for a small application but a more complex hashing function should be used when
     // dealing with a larger data sensitive project.
     let contents = this.state.todos.map(x => x.content)
-    if (!contents.includes(todo.content)) {
+    if (!contents.includes(todo.content.trim())) {
       todo.id = Math.random();
       // Create a array that contains the current array and the new todo item
       let new_list = [...this.state.todos, todo];
