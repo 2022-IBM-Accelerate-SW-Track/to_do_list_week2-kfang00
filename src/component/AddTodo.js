@@ -48,12 +48,12 @@ class AddTodo extends Component {
           variant="outlined"
           onChange={this.handleChange}
           value={this.state.content}
+          style = {{width: "250px"}}
         />
         <Button
-          style={{ marginLeft: "10px" }}
           onClick={this.handleSubmit}
           variant="contained"
-          color="primary"
+          style = {{ backgroundColor: "#ffbdda", borderRadius: "10px", margin: "10px"}}
         >
           Add
         </Button>
